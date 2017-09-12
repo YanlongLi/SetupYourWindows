@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\Shell\Vim]
+@="Edit With &Vim"
+"Icon"="\"C:\\Program Files\\Vim\\vim80\\gvim.exe\""
+
+[HKEY_CLASSES_ROOT\*\Shell\Vim\command]
+@="\"C:\\Program Files\\Vim\\vim80\\gvim.exe\" \"%1\""
+
+
+[HKEY_CLASSES_ROOT\*\Shell\Edit With Vim Tab]
+@="Edit With Vim Tab"
+"Icon"="\"C:\\Program Files\\Vim\\vim80\\gvim.exe\""
+
+[HKEY_CLASSES_ROOT\*\Shell\Edit With Vim Tab\command]
+@="\"C:\\Program Files\\Vim\\vim80\\gvim.exe\" -p --remote-tab-silent \"%1\" \"%*\""
+
+
+; http://vim.wikia.com/wiki/Adding_Vim_to_MS-Windows_File_Explorer_Menu
+; http://vim.wikia.com/wiki/Adding_Vim_to_MS-Windows_File_Explorer_Menu
+; http://vim.wikia.com/wiki/Launch_files_in_new_tabs_under_Windows

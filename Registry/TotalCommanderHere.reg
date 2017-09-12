@@ -1,0 +1,49 @@
+Windows Registry Editor Version 5.00
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[HKEY_CLASSES_ROOT\Folder\shell\Total Commander Left]
+@="Total Commander Left"
+"Icon"="\"C:\\totalcmd\\TOTALCMD64.EXE\""
+
+[HKEY_CLASSES_ROOT\Folder\shell\Total Commander Left\command]
+@="\"C:\\totalcmd\\TOTALCMD64.EXE\" /O /T /L=\"%1\""
+
+
+[HKEY_CLASSES_ROOT\Folder\shell\Total Commander Right]
+@="Total Commander Right"
+"Icon"="\"C:\\totalcmd\\TOTALCMD64.EXE\""
+
+[HKEY_CLASSES_ROOT\Folder\shell\Total Commander Right\command]
+@="\"C:\\totalcmd\\TOTALCMD64.EXE\" /O /T /R=\"%1\""
+
+
+[HKEY_CLASSES_ROOT\Folder\shell\Total Commander]
+@="Total Commander"
+"Icon"="\"C:\\totalcmd\\TOTALCMD64.EXE\""
+
+[HKEY_CLASSES_ROOT\Folder\shell\Total Commander\command]
+@="\"C:\\totalcmd\\TOTALCMD64.EXE\" \"D:\\tmp\" \"%1\""
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Total Commander Left]
+@="Total Commander Left"
+"Icon"="\"C:\\totalcmd\\TOTALCMD64.EXE\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Total Commander Left\Command]
+@="\"C:\\totalcmd\\TOTALCMD64.EXE\" /O /T /L=\"%v\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Total Commander Right]
+@="Total Commander Right"
+"Icon"="\"C:\\totalcmd\\TOTALCMD64.EXE\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Total Commander Right\Command]
+@="\"C:\\totalcmd\\TOTALCMD64.EXE\" /O /T /L=\"%v\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Total Commander]
+@="Total Commander"
+"Icon"="\"C:\\totalcmd\\TOTALCMD64.EXE\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Total Commander\Command]
+@="\"C:\\totalcmd\\TOTALCMD64.EXE\" \"D:\\tmp\" \"%v\""
