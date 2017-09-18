@@ -12,6 +12,10 @@
 ![Font](./_images/CommandPromptSetting.png)
 ![Colors](./_images/CommandPromptSetting2.png)
 
+### Show Desktop Icons
+
+![ShowDesktopIcons](./_images/ShowDesktopIcons.gif)
+
 ## Softwares
 (Some softwares are not easy to find and can be downloaded [here](https://github.com/YanlongLi/Softwares))
 
