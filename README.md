@@ -1,5 +1,33 @@
 ## System Setting
 
+<!-- toc -->
+
+  * [Console Fonts](#console-fonts)
+  * [Command Prompt](#command-prompt)
+  * [Show Desktop Icons](#show-desktop-icons)
+- [Softwares](#softwares)
+  * [7Zip](#7zip)
+  * [Astyle](#astyle)
+  * [BCompare](#bcompare)
+  * [cmake](#cmake)
+  * [Everything](#everything)
+  * [Firefox](#firefox)
+  * [Git](#git)
+  * [GVIM](#gvim)
+  * [Divvy](#divvy)
+  * [LLVM](#llvm)
+  * [Node](#node)
+  * [Notepad++](#notepad)
+  * [GnuWin32 related EXEs](#gnuwin32-related-exes)
+  * [Python2.7](#python27)
+  * [Putty](#putty)
+  * [SPlayer](#splayer)
+  * [Total Commander](#total-commander)
+  * [WinSCP](#winscp)
+  * [Visual Studio Extensions](#visual-studio-extensions)
+
+<!-- tocstop -->
+
 ### Console Fonts
 1. Install font `consolas-powerline` from directory `consolas-powerline`: `git submodule init && git submodule update`
 
