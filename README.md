@@ -120,7 +120,7 @@ Copy PuTTY.exe to any directory like `D:\Gosh\PuTTY\`
 
 Configurations:
 1. You may want to generate your private/public ssh key at `%HOME%\.ssh\`
-2. Base Configuration: [Putty.reg](./Registry/Putty.reg), _CAUTION!: change the user name to yours._
+2. Base Configuration: [PuTTY.reg](./Registry/PuTTY.reg), _CAUTION!: change the user name to yours._
 3. Add a session (manually or base on my template)
 ```
 Open a Command Prompt Under Directory Registry
@@ -145,7 +145,7 @@ Create Shortcut for Session: add parameter `--load <session name>` \
 
 ### Total Commander 
 (optional, as you need) \
-Configurations \
+Configurations
 1. Copy `GHISLER` to `%APPDATA%\GHISLER` \
 command: `robocopy GHISLER "%APPDATA\GHISLER%" /MIR`
 2. Add `Total Commander Here` to context menu: [TotalCommanderHere.reg](./Registry/TotalCommanderHere.reg) \
