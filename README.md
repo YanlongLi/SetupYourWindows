@@ -1,7 +1,8 @@
-## System Setting
+# Setup Your Windows
 
 <!-- toc -->
 
+- [System Setting](#system-setting)
   * [Console Fonts](#console-fonts)
   * [Command Prompt](#command-prompt)
   * [Show Desktop Icons](#show-desktop-icons)
@@ -27,6 +28,8 @@
   * [Visual Studio Extensions](#visual-studio-extensions)
 
 <!-- tocstop -->
+
+## System Setting
 
 ### Console Fonts
 1. Install font `consolas-powerline` from directory `consolas-powerline`: `git submodule init && git submodule update`
