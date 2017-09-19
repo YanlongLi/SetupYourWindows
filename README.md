@@ -134,6 +134,9 @@ In my template:
 1. Add remote command `tmux -u attach || tmux -u new`
 2. Change `Blue` color schema, un-readable using original blue color
 
+Create Shortcut for Session: add parameter `--load <session name>` \
+![PuTTYSessionAutoStart](./_images/PuTTYSessionAutoStart.gif)
+
 ### SPlayer
 (optional, as you need)
 
