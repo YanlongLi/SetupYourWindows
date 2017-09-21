@@ -140,6 +140,10 @@ In my template:
 Create Shortcut for Session: add parameter `--load <session name>` \
 ![PuTTYSessionAutoStart](./_images/PuTTYSessionAutoStart.gif)
 
+### AutoHotKey
+(map CapsLock to ESC)
+[CapsLock.ahk](./AutoHotKey/CapsLock.ahk)
+
 ### SPlayer
 (optional, as you need)
 
