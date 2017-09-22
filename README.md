@@ -1,5 +1,9 @@
 # Setup Your Windows
 
+This repo lists softwares I used and the configurations.
+I try to make my windows easy to use and note down the configurations.
+There are many alternatives for what I listed below.
+
 <!-- toc -->
 
 - [System Setting](#system-setting)
@@ -8,24 +12,26 @@
   * [Show Desktop Icons](#show-desktop-icons)
 - [Softwares](#softwares)
   * [7Zip](#7zip)
-  * [Astyle](#astyle)
-  * [BCompare](#bcompare)
   * [cmake](#cmake)
-  * [Everything](#everything)
-  * [Firefox](#firefox)
   * [Git](#git)
   * [GVIM](#gvim)
-  * [Divvy](#divvy)
   * [LLVM](#llvm)
   * [Node](#node)
-  * [Notepad++](#notepad)
   * [GnuWin32 related EXEs](#gnuwin32-related-exes)
   * [Python2.7](#python27)
   * [Putty](#putty)
-  * [SPlayer](#splayer)
+  * [AutoHotKey](#autohotkey)
   * [Total Commander](#total-commander)
+  * [Visual Studio](#visual-studio)
+- [Other Softwares that I used](#other-softwares-that-i-used)
+  * [SPlayer](#splayer)
+  * [Picassa](#picassa)
+  * [Divvy](#divvy)
+  * [Everything](#everything)
+  * [BCompare](#bcompare)
+  * [Firefox](#firefox)
+  * [Notepad++](#notepad)
   * [WinSCP](#winscp)
-  * [Visual Studio Extensions](#visual-studio-extensions)
 
 <!-- tocstop -->
 
@@ -54,19 +60,10 @@
 After Intallization, open `7zip File Manager` as Administrator, `Tools` -> `Options` -> `System` -> `+` \
 ![Config 7zip](./_images/Install7zip.png)
 
-### Astyle
-Unzip `Astyle_<version>_windows.zip` to a folder and add `bin` directory to system PATH
-
-### BCompare
-
 ### cmake
 ![Install Git](./_images/InstallCmake.png)
 
-### Everything
-Default Settings
-
-### Firefox
-(optional, as you need)
+Essential for some GVIM plugin
 
 ### Git
 1. Uncheck `Git Bash Here`, `Git GUI Here`, `Associate *` \
@@ -85,19 +82,16 @@ Default Settings
 4. Unzip `lua-<version>_Win64_bin.zip` to `C:\Program Files\Vim\vim8`
 5. Add `Edit With Vim` to Context Menu: [EditWithVim.reg](./Registry/EditWithVim.reg) (change gvim path if you installed vim at a different path)
 
-### Divvy
+Install Astyle (used to format code) \
+Unzip `Astyle_<version>_windows.zip` to a folder and add `bin` directory to system PATH
 
 ### LLVM
 ![Intall LLVM](_images/InstallLLVM.png)
 
+Essential for some GVIM plugin
 
 ### Node
-
-### Notepad++
-(configuration optional, in my configuration, I just disabled `Remember Last File`)
-1. `Notepad++` directory => %APPDATA%\Roaming\Notepad++\ 
-`robocopy "Notepad++" "%APPDATA%\NotePad++"`
-
+Essential for some GVIM plugin
 
 ### GnuWin32 related EXEs
 1. All default configurations
@@ -114,6 +108,8 @@ Default Settings
 
 ### Python2.7
 Select add to ENV Path
+
+Essential for some GVIM plugin
 
 ### Putty
 Copy PuTTY.exe to any directory like `D:\Gosh\PuTTY\`
@@ -144,9 +140,6 @@ Create Shortcut for Session: add parameter `--load <session name>` \
 (map CapsLock to ESC)
 [CapsLock.ahk](./AutoHotKey/CapsLock.ahk)
 
-### SPlayer
-(optional, as you need)
-
 ### Total Commander 
 (optional, as you need) \
 Configurations
@@ -166,11 +159,37 @@ Shortcut Mapping:
 - CS+ENTER=cm_SrcHideQuickview
 
 
+
+### Visual Studio
+[Extensions](./VisualStudio/Extensions.md)
+
+## Other Softwares that I used
+
+### SPlayer
+Video player
+
+### Picassa
+Photo viewer
+
+### [Divvy](http://mizage.com/divvy/)
+Used for window management
+
+### Everything
+Search disk files, very quick.
+
+### BCompare
+File or directory comparison
+
+### Firefox
+Browser \
+[Plugins I used](./Firefox/Plugins.md)
+
+### Notepad++
+(configuration optional, in my configuration, I just disabled `Remember Last File`)
+1. `Notepad++` directory => %APPDATA%\Roaming\Notepad++\ 
+`robocopy "Notepad++" "%APPDATA%\NotePad++"`
+
 ### WinSCP
-Download/Upload file from/to remote Linux Server
+- Download/Upload file from/to remote Linux Server
+- Complement for PuTTY
 
-
-### Visual Studio Extensions
-- VsVim
-- Markdown Editor \
-	Split horizental: `Toos->Options->Text Editor->Markdown->Advanced->Show below the Document->True`
