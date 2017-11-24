@@ -65,6 +65,8 @@ After Intallization, open `7zip File Manager` as Administrator, `Tools` -> `Opti
 
 Essential for some GVIM plugin
 
+Rounded tabs in Firefox Quantum: [photon-australis](https://github.com/wilfredwee/photon-australis)
+
 ### Git
 1. Uncheck `Git Bash Here`, `Git GUI Here`, `Associate *` \
 ![Install Git](./_images/InstallGit.png)
