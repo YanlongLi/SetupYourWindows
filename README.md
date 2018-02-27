@@ -195,3 +195,6 @@ Browser \
 - Download/Upload file from/to remote Linux Server
 - Complement for PuTTY
 
+## PromptPal & Clink
+http://www.promptpal.com/download.shtml
+Tabbed WIndows Command Prompt
