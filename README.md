@@ -49,6 +49,12 @@ There are many alternatives for what I listed below.
 ![Font](./_images/CommandPromptSetting.png)
 ![Colors](./_images/CommandPromptSetting2.png)
 
+### Customized the cmd
+```
+add "HKCU\Software\Microsoft\Command Processor" /v Autorun  /d "doskey /macrofile=\"\path\to\env.doskey\"" /t REG_SZ
+```
+__script provided by Conor Joplin__
+
 ### Show Desktop Icons
 
 ![ShowDesktopIcons](./_images/ShowDesktopIcons.gif)

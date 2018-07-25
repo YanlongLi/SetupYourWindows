@@ -38,7 +38,7 @@ Windows Registry Editor Version 5.00
 "Icon"="\"C:\\totalcmd\\TOTALCMD64.EXE\""
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Total Commander Right\Command]
-@="\"C:\\totalcmd\\TOTALCMD64.EXE\" /O /T /L=\"%v\""
+@="\"C:\\totalcmd\\TOTALCMD64.EXE\" /O /T /R=\"%v\""
 
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Total Commander]
