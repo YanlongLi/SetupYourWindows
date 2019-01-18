@@ -1,4 +1,30 @@
-/* hides the native tabs */
-#TabsToolbar {
+/* Hide TabBar */
+/* Set browser.tabs.drawInTitlebar to false */
+#main-window:not([customizing]):not([tabsintitlebar="true"]) #TabsToolbar {
   visibility: collapse;
+}
+#navigator-toolbox {
+  margin-top: 1px;
+}
+
+
+/* Change height of nav bar */
+/* https://github.com/Timvde/UserChrome-Tweaks/blob/master/toolbars/compact-toolbars.css */
+:root #urlbar,
+:root .searchbar-textbox {
+  font-size: unset !important;
+  min-height: 20px !important;
+}
+
+:root #identity-box {
+  max-height: 22px;
+}
+
+:root #nav-bar .toolbarbutton-1 {
+  padding: 0px !important;
+}
+
+/* Compatibility with auto-hide.css */
+:root #navigator-toolbox {
+  --nav-bar-height: 27px !important;
 }
