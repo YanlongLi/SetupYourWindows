@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+ 
+ [HKEY_CLASSES_ROOT\Drive\shell]
+ @="open"
+ 
+ [HKEY_CLASSES_ROOT\Drive\shell\open]
+ 
+ [HKEY_CLASSES_ROOT\Drive\shell\open\command]
+ @="c:\\totalcmd\\TOTALCMD64.EXE /O /T /L=\"%1\""
+ 
+ [HKEY_CLASSES_ROOT\Directory\shell]
+ @="open"
+ 
+ [HKEY_CLASSES_ROOT\Directory\shell\open]
+ 
+ [HKEY_CLASSES_ROOT\Directory\shell\open\command]
+ @="c:\\totalcmd\\TOTALCMD64.EXE /O /T /L=\"%1\""
