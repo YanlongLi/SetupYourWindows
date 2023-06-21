@@ -41,19 +41,24 @@ There are many alternatives for what I listed below.
 1. Install font `consolas-powerline` from directory `consolas-powerline`: `git submodule init && git submodule update`
 
 ### Command Prompt
-1. Add `Command Prompt Here` to context menu: [CommandPromptHere.reg](./Registry/CommandPromptHere.reg)
-2. Open Command Prompt -> Right Click on Title Bar -> Properties/Default ->
+1. Add `Command Prompt Here` to context menu: [CommandPromptHere.reg](./Registry/CommandPromptHere.reg) and customized the cmd
+properties [CommandPromptProperties.reg](./Registry/CommandPromptProperties.reg). \
+Or customize the cmd properties by opening Command Prompt -> Right Click on Title Bar -> Properties/Default ->
 	- Font (Consolas)
 	- Font Size (20px)
 	- Colors (Opacity: 75) \
 ![Font](./_images/CommandPromptSetting.png)
 ![Colors](./_images/CommandPromptSetting2.png)
-
-### Customized the cmd
+2. Install [Clink](https://mridgers.github.io/clink/). An `Autorun` entry will be added to registry `HKCU\Software\Microsoft\Command Processor` and clink runs every time command prompt starts.
+3. Customized commands by register the doskey macreofile.
 ```
-add "HKCU\Software\Microsoft\Command Processor" /v Autorun  /d "doskey /macrofile=\"\path\to\env.doskey\"" /t REG_SZ
+# Only register the doskey.
+add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"\path\to\env.doskey\"" /t REG_SZ
 ```
-__script provided by Conor Joplin__
+```
+# Register the doskey and keep clink.
+add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"\path\to\env.doskey\"&\"C:\Program Files\clink\0.4.9\clink.bat\" inject --autorun --profile ~\clink" /t REG_SZ
+```
 
 ### Show Desktop Icons
 
@@ -62,16 +67,13 @@ __script provided by Conor Joplin__
 ## Softwares
 (Some softwares are not easy to find and can be downloaded [here](https://github.com/YanlongLi/Softwares))
 
-### 7Zip
+### [7Zip](https://www.7-zip.org/download.html)
 After Intallization, open `7zip File Manager` as Administrator, `Tools` -> `Options` -> `System` -> `+` \
 ![Config 7zip](./_images/Install7zip.png)
 
-### cmake
-![Install Git](./_images/InstallCmake.png)
-
+### [CMake](https://cmake.org/download/)
+![Install CMake](./_images/InstallCmake.png).
 Essential for some GVIM plugin
-
-Rounded tabs in Firefox Quantum: [photon-australis](https://github.com/wilfredwee/photon-australis)
 
 ### Git
 1. Uncheck `Git Bash Here`, `Git GUI Here`, `Associate *` \
@@ -119,8 +121,8 @@ Select add to ENV Path
 
 Essential for some GVIM plugin
 
-### Putty
-Copy PuTTY.exe to any directory like `D:\Gosh\PuTTY\`
+### [Putty](https://puttytray.goeswhere.com/)
+Copy PuTTY.exe to any directory like `D:\PuTTY\`
 
 Configurations:
 1. You may want to generate your private/public ssh key at `%HOME%\.ssh\`
@@ -148,8 +150,7 @@ Create Shortcut for Session: add parameter `--load <session name>` \
 (map CapsLock to ESC)
 [CapsLock.ahk](./AutoHotKey/CapsLock.ahk)
 
-### Total Commander 
-(optional, as you need) \
+### [Total Commander](https://www.ghisler.com/download.htm)
 Configurations
 1. Copy `GHISLER` to `%APPDATA%\GHISLER` \
 command: `robocopy GHISLER "%APPDATA\GHISLER%" /MIR`
@@ -166,8 +167,6 @@ Shortcut Mapping:
 - C+ENTER=cm_SrcQuickview
 - CS+ENTER=cm_SrcHideQuickview
 
-
-
 ### Visual Studio
 [Extensions](./VisualStudio/Extensions.md)
 
@@ -182,7 +181,7 @@ Photo viewer
 ### [Divvy](http://mizage.com/divvy/)
 Used for window management
 
-### Everything
+### [Everything](https://www.voidtools.com/downloads/)
 Search disk files, very quick.
 
 ### BCompare
@@ -192,10 +191,7 @@ File or directory comparison
 Browser \
 [Plugins I used](./Firefox/Plugins.md)
 
-### Notepad++
-(configuration optional, in my configuration, I just disabled `Remember Last File`)
-1. `Notepad++` directory => %APPDATA%\Roaming\Notepad++\ 
-`robocopy "Notepad++" "%APPDATA%\NotePad++"`
+### VSCode
 
 ### WinSCP
 - Download/Upload file from/to remote Linux Server
