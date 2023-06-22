@@ -30,12 +30,32 @@ There are many alternatives for what I listed below.
   * [Everything](#everything)
   * [BCompare](#bcompare)
   * [Firefox](#firefox)
-  * [Notepad++](#notepad)
   * [WinSCP](#winscp)
 
 <!-- tocstop -->
 
 ## System Setting
+
+### [Disable Search Highlights](https://pureinfotech.com/disable-search-highlights-windows-11/#disable_highlights_windows11)
+
+`Settings` -> `Privacy & security` -> `Search permissions`
+
+### [Restore Classic Context menus](https://answers.microsoft.com/en-us/windows/forum/all/restore-old-right-click-context-menu-in-windows-11/a62e797c-eaf3-411b-aeec-e460e6e5a82a)
+
+```
+reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+; then restart the computer
+```
+
+### [Disable Recent Files](https://www.ubackup.com/windows-11/windows-11-recent-files-disable.html)
+
+`Group Policy`
+    -> `Computer Configuration`
+    -> `Administrative Templates`
+    -> `Start Menu and Taskbar`
+    -> `Do not keep history of recently opened documents`
+
+ Located at `%APPDATA%\Microsoft\Windows\Recent Items`
 
 ### Console Fonts
 1. Install font `consolas-powerline` from directory `consolas-powerline`: `git submodule init && git submodule update`
@@ -53,16 +73,21 @@ Or customize the cmd properties by opening Command Prompt -> Right Click on Titl
 3. Customized commands by register the doskey macreofile.
 ```
 # Only register the doskey.
-add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"\path\to\env.doskey\"" /t REG_SZ
+REG add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"\path\to\env.doskey\"" /t REG_SZ
 ```
 ```
 # Register the doskey and keep clink.
-add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"\path\to\env.doskey\"&\"C:\Program Files\clink\0.4.9\clink.bat\" inject --autorun --profile ~\clink" /t REG_SZ
+REG add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "doskey /macrofile=\"\path\to\env.doskey\"&\"C:\Program Files\clink\1.2.23.9b90e7\clink.bat\" inject --autorun --profile ~\clink" /t REG_SZ
 ```
 
 ### Show Desktop Icons
 
 ![ShowDesktopIcons](./_images/ShowDesktopIcons.gif)
+### To Add startup folder
+```
+Win+R
+shell:startup
+```
 
 ## Softwares
 (Some softwares are not easy to find and can be downloaded [here](https://github.com/YanlongLi/Softwares))
@@ -143,8 +168,7 @@ In my template:
 1. Add remote command `tmux -u attach || tmux -u new`
 2. Change `Blue` color schema, un-readable using original blue color
 
-Create Shortcut for Session: add parameter `--load <session name>` \
-![PuTTYSessionAutoStart](./_images/PuTTYSessionAutoStart.gif)
+Create Shortcut for Session: add parameter `--load <session name>`
 
 ### AutoHotKey
 (map CapsLock to ESC)

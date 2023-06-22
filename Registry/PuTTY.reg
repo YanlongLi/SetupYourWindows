@@ -12,6 +12,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Simontatham\PuTTY\Pageant]
 
 [HKEY_CURRENT_USER\Software\Simontatham\PuTTY\Pageant\Keys]
-"C:\\Users\\yanll\\.ssh\\id_rsa"=hex(0):
+"C:\\Users\\<UserName>\\.ssh\\id_rsa"=hex(0):
 
 [HKEY_CURRENT_USER\Software\Simontatham\PuTTY\Sessions]
