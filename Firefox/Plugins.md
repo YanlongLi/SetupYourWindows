@@ -34,7 +34,9 @@ body.dark-theme .tab .tab-icon {
 }
 ```
 
-Hide tabbar
+Hide tabbar:
+Open `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to true
+
 Update `%appdata%\Roaming\Mozilla\Firefox\Profiles\{profile}\Chrome\userChrome.css`
 ```
 /* Hide TabBar */
