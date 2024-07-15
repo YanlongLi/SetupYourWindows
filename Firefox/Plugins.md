@@ -34,6 +34,16 @@ body.dark-theme .tab .tab-icon {
 }
 ```
 
+Hide tabbar
+Update `%appdata%\Roaming\Mozilla\Firefox\Profiles\{profile}\Chrome\userChrome.css`
+```
+/* Hide TabBar */
+/* Set browser.tabs.drawInTitlebar to false */
+#main-window:not([customizing]):not([tabsintitlebar="true"]) #TabsToolbar {
+  visibility: collapse;
+}
+```
+
 VimVixen, the mapping below is to align with [vimperator](http://vimperator.org/)
 ```
 {
